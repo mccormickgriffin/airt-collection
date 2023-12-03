@@ -1,22 +1,10 @@
 import ImageGrid from "@/components/image-grid"
-
-const images = [
-  { src: "/example_image.jpg", alt: "Example Image" },
-  { src: "/example_image.jpg", alt: "Example Image" },
-  { src: "/example_image.jpg", alt: "Example Image" },
-  { src: "/example_image.jpg", alt: "Example Image" },
-  { src: "/example_image.jpg", alt: "Example Image" },
-  { src: "/example_image.jpg", alt: "Example Image" },
-  { src: "/example_image.jpg", alt: "Example Image" },
-  { src: "/example_image.jpg", alt: "Example Image" },
-  { src: "/example_image.jpg", alt: "Example Image" },
-  { src: "/example_image.jpg", alt: "Example Image" },
-]
+import { getImages } from "@/lib/utils"
 
 export default function Home() {
   return (
     <main>
-      <ImageGrid images={images} />        
+      <ImageGrid images={getImages()} />        
     </main>
   )
 }
