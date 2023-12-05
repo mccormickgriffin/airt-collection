@@ -23,9 +23,11 @@ const ImageGrid: React.FC<ImageGridProps> = ({ images }) => {
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
-          <img
+          <Image
             src={image.src}
             alt={image.alt}
+            width={500}
+            height={500}
             className="object-cover w-full h-full transisition-scale duration-500 hover:scale-110"
           />
         </Link>
